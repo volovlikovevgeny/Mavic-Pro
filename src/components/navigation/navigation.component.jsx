@@ -1,6 +1,7 @@
 import React from 'react';
 import './navigation.styles.scss';
 
+import Logo from '../../assets/img/Logo.svg';
 
 class Navigation extends React.Component {
     render() {
@@ -11,7 +12,7 @@ class Navigation extends React.Component {
                         <a className='logo' href="#">
                             <picture>
                                 <source srcSet='https://i.ibb.co/dfXNkjd/logo-mobile.png' media="(max-width: 600px)" />
-                                <img src='https://i.ibb.co/M6rmnjY/logo.png' alt="logo" />
+                                <img src={Logo} alt="logo" />
                             </picture>
                         </a>
                         <nav className='menu'>
@@ -19,7 +20,7 @@ class Navigation extends React.Component {
                                 <li className='menu__list-item'><a className='menu__list-link' href="#product">О ДРОНЕ</a></li>
                                 <li className='menu__list-item'><a className='menu__list-link' href="#">ПРЕИМУЩЕСТВА</a></li>
                                 <li className='menu__list-item'><a className='menu__list-link' href="#">ХАРАКТЕРИСТИКИ</a></li>
-                                <li className='menu__list-item'><a className='menu__list-link' href="#">ВОПРОСЫ</a></li>
+                                <li className='menu__list-item'><a className='menu__list-link' href="#questions">ВОПРОСЫ</a></li>
                                 <li className='menu__list-item'><a className='menu__list-link' href="#">КОНТАКТЫ</a></li>
                             </ul>
                         </nav>

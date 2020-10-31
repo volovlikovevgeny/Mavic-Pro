@@ -1,18 +1,6 @@
-
-.page-section-advantages{
-    min-height: 100vh;
-    background-image: url('https://i.ibb.co/4WBMqsc/forrest.jpg');
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    position: relative;
-    padding: 74px 0 50px;
-    z-index: 11;
-    background-image: url('https://i.ibb.co/3sbrMpv/page-bg.jpg');
-
-}
-
 .benefits{
+
+    background-image: url('https://i.ibb.co/4WBMqsc/forrest.jpg');
     .benefits-items{
         display: flex;
         flex-wrap: wrap;
@@ -57,11 +45,13 @@
                 width: 160px;
                 font-size: 21px;
                 line-height: 24px;
+                font-weight: 700;
             }
 
             .benefits__info-text{
                 font-size:15px ;
                 line-height: 18px;
+                font-weight: 300;
             }
         }
 

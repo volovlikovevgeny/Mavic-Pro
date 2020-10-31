@@ -31,6 +31,7 @@ body{
   color: #fff;
   font-size: 17px;
   line-height:26px;
+  font-family: 'Ubuntu',sans-serif;
 }
 
 .container{
@@ -42,7 +43,7 @@ body{
 
 .page-section{
   min-height: 100vh;
-  background-image: url('https://i.ibb.co/4WBMqsc/forrest.jpg');
+  /* background-image: url('https://i.ibb.co/4WBMqsc/forrest.jpg'); */
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -63,7 +64,7 @@ body{
 
 
 .title{
-/* font-family: ; */
+  font-weight: 400;
   font-size: 44px;
   line-height: 53px;
   padding-left: 25px;

@@ -12,7 +12,7 @@ export default function Specification() {
                 </div>
                 <div className='specification__inner'>
                     <div className="specification__item">
-                        <div className='specification__box'>
+                        <div className='specification__box specification__box-1'>
                             <h4 className='specification__box-title'>
                                 Dlog-M 10 бит
                             </h4>
@@ -22,7 +22,7 @@ export default function Specification() {
                                 дающим больше возможностей для цветокоррекции.
                             </p>
                         </div>
-                        <div className='specification__box'>
+                        <div className='specification__box  specification__box-2'>
                             <h4 className='specification__box-title'>
                                 Камера Hasselblad
                             </h4>
@@ -32,13 +32,12 @@ export default function Specification() {
                                 и превосходным качеством изображений.
                             </p>
                         </div>
-
                     </div>
-                    <div className="specification__item">
+                    <div className="specification__item specification__item--center">
                         <img src="https://i.ibb.co/XJBM8rm/mavic.png" alt="" />
                     </div>
                     <div className="specification__item">
-                        <div className='specification__box'>
+                        <div className='specification__box  specification__box-3'>
                             <h4 className='specification__box-title'>
                                 Матрица CMOS 1
                             </h4>
@@ -47,7 +46,7 @@ export default function Specification() {
                                 четыре раза превышает показатели Mavic Pro
                             </p>
                         </div>
-                        <div className='specification__box'>
+                        <div className='specification__box  specification__box-4'>
                             <h4 className='specification__box-title'>
                                 Видео HDR
                             </h4>

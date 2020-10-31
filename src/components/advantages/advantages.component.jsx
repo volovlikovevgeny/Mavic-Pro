@@ -6,7 +6,7 @@ import './advantages.styles.scss';
 
 export default function Advantages() {
     return (
-        <section className='page-section-advantages benefits'>
+        <section className='page-section benefits'>
             <div className='container'>
                 <h3 className='title'>Преимущества</h3>
                 <div className='benefits-items'>

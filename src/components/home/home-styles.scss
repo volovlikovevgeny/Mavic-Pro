@@ -33,12 +33,14 @@
             margin-bottom: 50px;
             font-size: 96px;
             line-height: 115px;
+            font-weight: 500;
         }
 
         .top__text{
             max-width: 324px;
-
             margin: 25 0 35px;
+            font-weight: 300;
+            
         }
 
         .top__social-list{
@@ -46,6 +48,14 @@
             .top__social-item{
                 display: inline-block;
                 margin: 0 25px;
+
+                .top__social-link{
+                    img{
+                        color: black;
+                    }
+                }
+
+           
             }        
         }
     }

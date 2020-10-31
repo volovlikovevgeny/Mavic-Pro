@@ -1,12 +1,15 @@
 import React from 'react';
 import './home-styles.scss';
 import { ReactComponent as ArrowDownSvg } from '../../assets/img/arrow-down.svg'
+import Instagram from '../../assets/img/instagram.svg';
+import YouTube from '../../assets/img/youtube.svg';
+import FaceBook from '../../assets/img/facebook.svg';
 
 const Home = () => (
     <section className='page-section-home top' style={{ borderBottom: '1px solid black' }}>
         <div className='container'>
             <div className='top__inner'>
-                <h1 className='top__title'>Macic 2 Pro</h1>
+                <h1 className='top__title'>Mavic 2 Pro</h1>
                 <img src="https://i.ibb.co/XJBM8rm/mavic.png" alt="" />
                 <p className='top__text'>
                     Квадрокоптер Dji Mavic 2 Pro с профессиональной камерой Hasselblad
@@ -14,17 +17,17 @@ const Home = () => (
                 <ul className="top__social-list">
                     <li className='top__social-item'>
                         <a className='top__social-link' href="#">
-                            <img src="https://i.ibb.co/0CN0NrL/image.png" alt="facebook" />
+                            <img src={Instagram} alt="facebook" />
                         </a>
                     </li>
                     <li className='top__social-item'>
                         <a className='top__social-link' href="#">
-                            <img src="https://i.ibb.co/WD3h0Yv/image.png" alt="youtube" />
+                            <img src={YouTube} alt="youtube" />
                         </a>
                     </li>
                     <li className='top__social-item'>
                         <a className='top__social-link' href="#">
-                            <img src="https://i.ibb.co/w6QLKY6/instagram.png" alt="instagram" />
+                            <img src={FaceBook} alt="instagram" />
                         </a>
                     </li>
                 </ul>

@@ -7,7 +7,6 @@ import Advantages from './components/advantages/advantages.component';
 import Specification from './components/specification/specification.component';
 import Questions from './components/questions/questions.component';
 import Contacts from './components/contacts/contacts.component';
-import Footer from './components/footer/footer.component';
 
 import './App.css';
 
@@ -22,7 +21,7 @@ class App extends React.Component {
         <Specification />
         <Questions />
         <Contacts />
-        <Footer />
+
       </div>
     )
   }
