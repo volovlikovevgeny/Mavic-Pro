@@ -4,12 +4,14 @@
     .questions__items{
         max-width: 757px;
         padding-bottom: 15px;
+        border: none;
     }
 
     .questions__item{
        background-color: rgba(0,0,0,0.3);
        max-width: 690px;
        position: relative;
+
 
     &:nth-child(3)::before{
         position: absolute;
