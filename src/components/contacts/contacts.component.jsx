@@ -8,7 +8,7 @@ import './contacts.styles.scss';
 
 export default function Contacts() {
     return (
-        <section className='page-section-contacts contacts'>
+        <section className='page-section-contacts contacts' id='contacts'>
             <div className='container'>
                 <h3 className='title'>Contacts</h3>
                 <div className='contacts__inner'>

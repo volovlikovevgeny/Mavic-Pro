@@ -6,7 +6,7 @@ import YouTube from '../../assets/img/youtube.svg';
 import FaceBook from '../../assets/img/facebook.svg';
 
 const Home = () => (
-    <section className='page-section-home top' style={{ borderBottom: '1px solid black' }}>
+    <section className='page-section-home top'  >
         <div className='container'>
             <div className='top__inner'>
                 <h1 className='top__title'>Mavic 2 Pro</h1>

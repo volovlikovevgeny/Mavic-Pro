@@ -3,8 +3,30 @@ import './navigation.styles.scss';
 
 import Logo from '../../assets/img/Logo.svg';
 
+import { Link } from 'react-scroll';
+
 class Navigation extends React.Component {
+
+
+    constructor() {
+        super()
+
+        this.state = {
+            isOpen: false
+        }
+    }
+
+
+    clicking = () => (
+        this.setState({
+            isOpen: !this.state.isOpen
+        })
+    )
+
+
     render() {
+        const { isOpen } = this.state
+
         return (
             <header className='header'>
                 <div className='container'>
@@ -16,18 +38,56 @@ class Navigation extends React.Component {
                             </picture>
                         </a>
                         <nav className='menu'>
-                            <ul className='menu__list'>
-                                <li className='menu__list-item'><a className='menu__list-link' href="#product">О ДРОНЕ</a></li>
-                                <li className='menu__list-item'><a className='menu__list-link' href="#">ПРЕИМУЩЕСТВА</a></li>
-                                <li className='menu__list-item'><a className='menu__list-link' href="#">ХАРАКТЕРИСТИКИ</a></li>
-                                <li className='menu__list-item'><a className='menu__list-link' href="#questions">ВОПРОСЫ</a></li>
-                                <li className='menu__list-item'><a className='menu__list-link' href="#">КОНТАКТЫ</a></li>
+                            <ul className={`menu__list ${isOpen ? 'active' : ' '}`}>
+                                <li className='menu__list-item'>
+                                    <Link
+                                        activeClass='active'
+                                        to='product'
+                                        spy={true}
+                                        smooth={true}
+                                        offset={70}
+                                        duration={700}
+                                        className='menu__list-link' >О ДРОНЕ</Link>
+                                </li>
+                                <li className='menu__list-item'>
+                                    <Link activeClass='active'
+                                        to='benefits'
+                                        spy={true}
+                                        smooth={true}
+                                        offset={70}
+                                        duration={700} className='menu__list-link' >ПРЕИМУЩЕСТВА</Link>
+                                </li>
+                                <li className='menu__list-item'>
+                                    <Link activeClass='active'
+                                        to='specification'
+                                        spy={true}
+                                        smooth={true}
+                                        offset={70}
+                                        duration={700} className='menu__list-link'>ХАРАКТЕРИСТИКИ</Link>
+                                </li>
+                                <li className='menu__list-item'>
+                                    <Link activeClass='active'
+                                        to='questions'
+                                        spy={true}
+                                        smooth={true}
+                                        offset={70}
+                                        duration={700} className='menu__list-link' >ВОПРОСЫ</Link>
+                                </li>
+                                <li className='menu__list-item'>
+                                    <Link activeClass='active'
+                                        to='contacts'
+                                        spy={true}
+                                        smooth={true}
+                                        offset={70}
+                                        duration={700} className='menu__list-link'>КОНТАКТЫ</Link>
+                                </li>
                             </ul>
                         </nav>
                         <div className="header__info">
                             <button className='header__btn'>Buy</button>
                             <a className='header__phone' href="tel:89772850461">8 (977) 285 04 61</a>
                         </div>
+                        <div onClick={this.clicking}><span className='hamburger'>&#9776;</span></div>
                     </div>
                 </div>
             </header>

@@ -42,8 +42,7 @@ body{
 
 
 .page-section{
-  min-height: 100vh;
-  /* background-image: url('https://i.ibb.co/4WBMqsc/forrest.jpg'); */
+  min-height: 109vh;
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -69,5 +68,17 @@ body{
   line-height: 53px;
   padding-left: 25px;
   margin-bottom: 55px;
+}
+
+@media(max-width: 1024px){
+
+  body{
+    font-size: 16px;
+    line-height: 22px;
+  }
+  
+  .title{
+    text-align: center;
+  }
 }
 

@@ -124,7 +124,24 @@ z-index: 111;
             color: #fff;
             opacity: 0.64;
         }
+    }
+}
 
+@media(max-width:1100px){
+    .contacts .contacts__inner {
+        flex-wrap: wrap;
+ }
 
+ .contacts .contacts__inner .contacts__form{
+    width: 100%;
+    margin: 0;
+    order: 1;
+    margin-bottom: 20px;
+  }
+}
+
+@media(max-width:400px){
+    .contacts .contacts__inner .contacts__info{
+        margin-right: 0;
     }
 }

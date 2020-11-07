@@ -54,9 +54,20 @@
                         color: black;
                     }
                 }
-
-           
             }        
         }
     }
+}
+
+@media(max-width: 1024px){
+    .top__title{
+     display: none;
+    }  
+        .top__inner img{
+        width: 80%;
+    }  
+
+    .top__text{
+        margin:15px 0 30% ;
+       }  
 }

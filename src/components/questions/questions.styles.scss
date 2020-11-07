@@ -1,6 +1,7 @@
 .questions{
 
     background-image: url('https://i.ibb.co/4WBMqsc/forrest.jpg');
+
     .questions__items{
         max-width: 757px;
         padding-bottom: 15px;
@@ -44,6 +45,7 @@
          margin-bottom: 4px;
          position: relative;
          cursor: pointer;
+        
          
       
          &::after{
@@ -61,6 +63,14 @@
              transition: 0.4s;
          }
     }
+}
 
+@media(max-width:1250px){
+    .questions .questions__item:nth-child(3)::before{
+        display: none;
+    }
 
+    .questions .questions__items{
+        padding-right: 60px;
+    }
 }

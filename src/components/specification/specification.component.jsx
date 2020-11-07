@@ -5,7 +5,7 @@ import './specification.styles.scss';
 
 export default function Specification() {
     return (
-        <div className='page-section specification'>
+        <section className='page-section specification' id='specification'>
             <div className='container'>
                 <div className='title'>
                     Характеристики
@@ -33,7 +33,7 @@ export default function Specification() {
                             </p>
                         </div>
                     </div>
-                    <div className="specification__item specification__item--center">
+                    <div className="specification__item specification__item-center">
                         <img src="https://i.ibb.co/XJBM8rm/mavic.png" alt="" />
                     </div>
                     <div className="specification__item">
@@ -64,6 +64,6 @@ export default function Specification() {
                     <ArrowDownSvg />
                 </a>
             </div>
-        </div>
+        </section>
     )
 }
