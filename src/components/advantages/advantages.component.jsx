@@ -1,5 +1,6 @@
 import React from 'react';
-import { ReactComponent as ArrowDownSvg } from '../../assets/img/arrow-down.svg'
+import { ReactComponent as ArrowDownSvg } from '../../assets/img/arrow-down.svg';
+import { Link } from 'react-scroll';
 
 
 import './advantages.styles.scss';
@@ -78,10 +79,20 @@ export default function Advantages() {
                 </div>
             </div>
             <div className='scroll__btn'>
-                <a href="#">
+                <Link
+                    style={{ cursor: 'pointer' }}
+                    activeClass='active'
+                    to='specification'
+                    spy={true}
+                    smooth={true}
+                    offset={70}
+                    duration={700}
+                >
                     <ArrowDownSvg />
-                </a>
+                </Link>
             </div>
         </section>
     )
 }
+
+

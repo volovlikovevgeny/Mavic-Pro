@@ -1,6 +1,6 @@
 import React from 'react'
 import { ReactComponent as ArrowDownSvg } from '../../assets/img/arrow-down.svg'
-
+import { Link } from 'react-scroll';
 import './specification.styles.scss';
 
 export default function Specification() {
@@ -60,9 +60,16 @@ export default function Specification() {
                 </div>
             </div>
             <div className='scroll__btn'>
-                <a href="#">
+                <Link
+                    style={{ cursor: 'pointer' }}
+                    activeClass='active'
+                    to='questions'
+                    spy={true}
+                    smooth={true}
+                    offset={70}
+                    duration={700}>
                     <ArrowDownSvg />
-                </a>
+                </Link>
             </div>
         </section>
     )

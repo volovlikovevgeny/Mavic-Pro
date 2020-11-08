@@ -47,7 +47,9 @@ class Navigation extends React.Component {
                                         smooth={true}
                                         offset={70}
                                         duration={700}
-                                        className='menu__list-link' >О ДРОНЕ</Link>
+                                        className='menu__list-link' >
+                                        О ДРОНЕ
+                                        </Link>
                                 </li>
                                 <li className='menu__list-item'>
                                     <Link activeClass='active'

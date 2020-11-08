@@ -5,6 +5,10 @@ import Instagram from '../../assets/img/instagram.svg';
 import YouTube from '../../assets/img/youtube.svg';
 import FaceBook from '../../assets/img/facebook.svg';
 
+import { Link } from 'react-scroll';
+
+
+
 const Home = () => (
     <section className='page-section-home top'  >
         <div className='container'>
@@ -34,9 +38,17 @@ const Home = () => (
             </div>
         </div>
         <div className='scroll__btn'>
-            <a href="#">
+            <Link
+                style={{ cursor: 'pointer' }}
+                activeClass='active'
+                to='product'
+                spy={true}
+                smooth={true}
+                offset={70}
+                duration={700}
+                className='menu__list-link' >
                 <ArrowDownSvg />
-            </a>
+            </Link>
         </div>
     </section>
 )

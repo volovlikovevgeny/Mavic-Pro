@@ -1,6 +1,6 @@
 import React from 'react';
 import { ReactComponent as ArrowDownSvg } from '../../assets/img/arrow-down.svg'
-
+import { Link } from 'react-scroll';
 
 import './questions.styles.scss';
 
@@ -30,9 +30,6 @@ class Questions extends React.Component {
     isHidden4 = () => {
         this.setState({ isHidden4: !this.state.isHidden4 })
     }
-
-
-
 
     render() {
         return (
@@ -87,9 +84,17 @@ class Questions extends React.Component {
 
                 </div>
                 <div className='scroll__btn'>
-                    <a href="#">
+                    <Link
+                        style={{ cursor: 'pointer' }}
+                        activeClass='active'
+                        to='contacts'
+                        spy={true}
+                        smooth={true}
+                        offset={70}
+                        duration={700}
+                    >
                         <ArrowDownSvg />
-                    </a>
+                    </Link>
                 </div>
             </section>
         )

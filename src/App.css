@@ -82,3 +82,9 @@ body{
   }
 }
 
+@media (max-width: 600px){
+.specification .title {
+font-size: 30px;
+}    
+}
+
